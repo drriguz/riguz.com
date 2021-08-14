@@ -1,0 +1,84 @@
+body {
+    font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.brand {
+    font-family: QianTuXiaoTuTi-2;
+    font-size: 32px;
+    color: #00655b;
+}
+
+.navbar-item img {
+    max-height: 2.75rem;
+}
+
+.picture-container {
+    background-image: url(/assets/R-C.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    height: 300px;
+}
+
+.overlay {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, .3);
+    /* background-image: linear-gradient(
+      to left,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.2) 20%,
+      rgba(0,0,0,0.4) 40%,
+      rgba(0,0,0,0.6) 60%,
+      rgba(0,0,0,0.8) 80%,
+      rgba(0,0,0,1) 100%); */
+
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.overlay h1{
+    font-family: FangZhengSuXinShiLiuKaiJianTi-1;
+}
+
+.card {
+    height: 100%;
+}
+
+.cards {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card-content>.content>p, p.description {
+    font-size:small;
+}
+
+p.description {
+    color: black;
+}
+
+
+/** override bulma style **/
+.navbar-link, .navbar-item {
+    font-weight: 600;
+    color      : #2c2c2c;
+    font-size  : 14px;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
+}
+
+.navbar-link:not(.is-arrowless)::after,
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-width: 1px;
+    width       : 6px;
+    height      : 6px;
+    border-color: #2c2c2c;
+}

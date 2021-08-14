@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "QianTuXiaoTuTi-2";
+    src: url("QianTuXiaoTuTi-2.eot"); /* IE9 */
+    src: url("QianTuXiaoTuTi-2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("QianTuXiaoTuTi-2.woff") format("woff"), /* chrome、firefox */
+    url("QianTuXiaoTuTi-2.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("QianTuXiaoTuTi-2.svg#QianTuXiaoTuTi-2") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
