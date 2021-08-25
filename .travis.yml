@@ -19,7 +19,7 @@ before_install:
 script:
 - cd assets
 - find . -name '*.jpg' -o -name '*.jpeg' | xargs jpegoptim --strip-all
-- optipng -silent *.png
+- optipng assets/*.png
 deploy:
   provider: script
   skip_cleanup: true
