@@ -16,6 +16,7 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 20px;
+    padding-top: 200px;
 }
 
 .content-text {
@@ -27,7 +28,7 @@ html, body {
     font-size: 9px;
 }
 .footer {
-    background: #0a0d16;
+    background: black;
     color: #ddd;
     font-size: small;
     padding: 1rem 1.5rem 1rem;
