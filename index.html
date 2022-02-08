@@ -12,20 +12,15 @@
   <link rel="icon" type="image/png" href="assets/971704.svg">
 </head>
 
-<body>
+<body class="is-flex is-flex-direction-column">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item">
-        <img src="assets/154894.svg">
-        <h1 class="brand">一个日牯子</h1>
-      </a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="topNavBar">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-
     <div id="topNavBar" class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item" href="https://blog.riguz.com">博客</a>
@@ -52,24 +47,37 @@
       </div>
     </div>
   </nav>
-  <div class="container is-max-desktop" id="content">
-    <video autoplay muted loop id="myVideo">
-      <source src="assets/hacker.mp4" type="video/mp4">
-    </video>
-    <div class="columns mt-2 about">
-      <div class="column is-full has-text-centered">
-        <p>外面的世界没有对齐</p>
-        <p>我的脑海一片空白</p>
-        <p>请不要打断</p>
-        <p>我只想安安静静写写代码</p>  
+  <section class="is-desktop main-content is-flex is-align-items-flex-end is-justify-content-center">
+    <div class="is-flex is-flex-direction-column is-align-items-flex-start content-text">
+      <p>HELLO!</p>
+      <p class="title">
+        I AM RIGUZ LEE | 一个日牯子
+      </p>
+      <div class="description-text">
+        <p">
+          不知道哪一天,也会有一个小房间
+          房间里有个我,我站在小窗前
+        </p>
+        <p>也不用太多饰件,会挂着夜光小圈
+          睡不着的时候亮着,闭上眼睛与我同眠
+        </p>
+        <p>也会静坐在小窗边,等风路过麦田
+          也会徘徊在小屋里,看墙上的照片
+        </p>
+        <p>
+          也会有只小猫,发呆或是缠绵
+          也会种点小草,每天相顾无言
+        </p>
+        <p>也不必为未来而忙碌,也不必为过去而挂牵</p>
+        <p>咦，这不是儿时的小屋？</p>
+        <p>噢，失去的乐园</p>
       </div>
-
-  </div>
-  </div>
+    </div>
+  </section>
   <footer class="footer">
     <div class="content has-text-centered">
       <p class="description">
-        <strong>&copy;2017 — 2022 Riguz Lee</strong>. All rights reserved.
+        &copy;2017 — 2022 Riguz Lee. All rights reserved.
       </p>
       <p class="description">
         Powered by <a href="https://bulma.io/">Bulma</a> | <a href="https://undraw.co/">unDraw</a>
@@ -79,4 +87,5 @@
   <script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="assets/init.js"></script>
 </body>
+
 </html>

@@ -4,85 +4,38 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-#myVideo {
-    position  : fixed;
-    right     : 0;
-    bottom    : 0;
-    min-width : 100%;
-    min-height: 100%;
-    z-index   : -1;
-}
-
-.footer {
-    position  : fixed;
-    right     : 0;
-    bottom    : 0;
-    left: 0;
-}
-
-.about {
-    color: white;
-}
-
-.brand {
-    font-family: QianTuXiaoTuTi-2;
-    font-size: 32px;
-    color: #00655b;
-}
-
-.navbar-item img {
-    max-height: 2.75rem;
-}
-
-.picture-container {
-    background-image: url(/assets/R-C.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    padding-left: 0;
-    padding-right: 0;
-    height: 300px;
-}
-
-.overlay {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, .3);
-    /* background-image: linear-gradient(
-      to left,
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,0.2) 20%,
-      rgba(0,0,0,0.4) 40%,
-      rgba(0,0,0,0.6) 60%,
-      rgba(0,0,0,0.8) 80%,
-      rgba(0,0,0,1) 100%); */
-
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-
-.overlay h1{
-    font-family: FangZhengSuXinShiLiuKaiJianTi-1;
-}
-
-.card {
+html, body {
     height: 100%;
 }
 
-.cards {
-    margin-top: 20px;
+.main-content {
+    background-image: url(/assets/r1.png);
+    background-color: #0a0d16;
+    color: #ddd;
+    flex: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 20px;
 }
 
-.card-content>.content>p, p.description {
-    font-size:small;
+.content-text {
+    flex: 1;
+    text-align: left;
 }
 
-p.description {
-    color: black;
+.description-text {
+    font-size: 9px;
+}
+.footer {
+    background: #0a0d16;
+    color: #ddd;
+    font-size: small;
+    padding: 1rem 1.5rem 1rem;
 }
 
+.title {
+    color: white;
+}
 
 /** override bulma style **/
 .navbar-link, .navbar-item {
