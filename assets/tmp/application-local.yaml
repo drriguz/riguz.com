@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:mysql://10.232.34.126:3306/dw_dynamic_db
+    username: agent
+    password: 1125482715
