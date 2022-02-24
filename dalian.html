@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF测试</title>
+</head>
+
+<body class="is-flex is-flex-direction-column">
+  <div>
+    <button onclick="onClick()">PDF预览+下载</button>
+  </div>
+</body>
+
+<script>
+  function onClick() {
+    console.log('Clicked!')
+    url = "hello-world.pdf"
+    download(url, "hello world.pdf")
+    window.open(url, '_blank');
+  }
+
+  function download(url, filename) {
+    fetch(url)
+      .then(response => response.blob())
+      .then(blob => {
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = filename;
+        link.click();
+    })
+    .catch(console.error);
+  }
+</script>
+
+</html>
