@@ -8,12 +8,15 @@ html, body {
     height: 100%;
 }
 
+.flex-1 {
+    flex: 1;
+}
 .mobile-main-content {
     flex: 1;
-    background-image: url(/assets/f1.jpg);
+    /* background-image: url(/assets/f1.jpg);
     background-position: bottom right;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
 }
 
@@ -56,4 +59,8 @@ html, body {
     width       : 6px;
     height      : 6px;
     border-color: #2c2c2c;
+}
+
+.project {
+    flex:1;
 }

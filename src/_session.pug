@@ -1,0 +1,13 @@
+mixin session(time, title, place, link) 
+  .card.mb-2
+    .card-content
+      .media
+        .media-left
+          p= time
+        .media-content
+          p.title.is-6= title
+          p.subtitle.is-7= place
+        .media-right
+          p= link
+      .content
+        block

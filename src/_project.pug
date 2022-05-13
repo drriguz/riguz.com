@@ -1,0 +1,21 @@
+mixin project(icon, title, github, status, version) 
+  .column.is-flex.is-half
+    .card.flex-1
+      .card-content 
+        .media
+          if icon
+            .media-left
+              figure.image.is-48x48
+                img(src= icon)
+          .media-content
+            .title.is-5.has-text-grey-darker 
+              a(href=github)= title
+            .subtitle
+              span.tag.is-dark.mr-1 Author
+              if status
+                span.tag.is-warning.mr-1= status
+              if version
+                span.tag.is-success.mr-1= version
+        .content
+          block
+          

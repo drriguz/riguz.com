@@ -12,9 +12,10 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_db2095f63ba3_key -iv $encrypted_db2095f63ba3_iv
   -in deploy_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
-- sudo apt-get install -y jpegoptim
-- sudo apt-get install -y optipng
+- sudo apt-get install -y jpegoptim optipng
+- sudo npm in pug-cli -g
 script:
+- pug ./src -o ./ -P && rm -f _*.html
 - cd assets
 - find . -name '*.jpg' -o -name '*.jpeg' | xargs jpegoptim --strip-all
 deploy:

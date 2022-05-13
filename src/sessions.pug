@@ -1,0 +1,23 @@
+extends _layout.pug
+include _session.pug
+
+block content
+  section.hero
+    .hero-body
+      p.title
+        | Sessions/ Talks
+      p.subtitle.has-text-grey-darker
+        | My sharing sessions & talks about development or technologies. 
+      hr
+      +session('2022/01/17', 'Log4Shell Vulnerability(Log4J史诗级漏洞浅析)', 'Kingsoft Internal', 'Download')
+        p.has-text-grey.mb-1
+          | This is session introduces the Log4Shell Vulnerability, including how it works and how to defend and fix it. Also, there's a small demonstration shows how to use Log4Shell to hack into some system.
+      +session('2020/09/15', 'Introduce to Flutter', 'Thoughtworks Internal', 'Download')
+        p.has-text-grey.mb-1
+          | A brief introduction to development of mobile apps using flutter. 
+      +session('2019/08/13', 'Introduce to Angular', 'Thoughtworks Internal', 'Download')
+        p.has-text-grey.mb-1
+          | Talks about how easy angular is and how to start with it.
+      +session('2019/07/11', 'IEEE 754 Float Number', 'Thoughtworks Internal', 'Download')
+        p.has-text-grey.mb-1
+          | A session about how float numbers are defined in IEEE 754 and how it works.

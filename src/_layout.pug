@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Riguz: Not only a programmer
+  link(rel='stylesheet' href='bulma/css/bulma.min.css')
+  link(rel='stylesheet' href='assets/main.css')
+  link(rel='icon' type='image/png' href='assets/971704.svg')
+body.is-flex.is-flex-direction-column
+  nav.navbar(role='navigation' aria-label='main navigation')
+    .navbar-brand
+      a.navbar-item(href='https://riguz.com')
+        img(src='/assets/971704.svg')
+      a.navbar-burger(role='button' aria-label='menu' aria-expanded='false' data-target='topNavBar')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
+    #topNavBar.navbar-menu
+      .navbar-end
+        a.navbar-item(href='https://blog.riguz.com') Blog
+        a.navbar-item(href='https://wiki.riguz.com') Wiki
+        a.navbar-item(href='/projects.html') Open Source
+        a.navbar-item(href='/sessions.html') Sessions
+        a.navbar-item(href='/about.html') About Me
+  section.flex-1.container
+    block content
+  footer.footer
+    .content.has-text-centered
+      p.description
+        | &copy;2017 &mdash; 2022 Riguz Lee. All rights reserved.
+      p.description
+        | Powered by 
+        a(href='https://bulma.io/') Bulma
+        |  | 
+        a(href='https://undraw.co/') unDraw
+  script(type='text/javascript' src='assets/jquery-3.6.0.min.js')
+  script(type='text/javascript' src='assets/init.js')

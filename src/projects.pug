@@ -1,0 +1,77 @@
+extends _layout.pug
+include _project.pug
+
+block content
+  section.hero
+    .hero-body
+      p.title
+        | Open Source
+      p.subtitle
+        | These are the open source projects that I am involved with, either as the author or as a maintainer.
+      
+      h1.subtitle Apps and Flutter Plugins
+      hr
+      .columns
+        +project('/assets/okapia.png', 'Okapia', 'https://github.com/drriguz/ben', 'In progress', null)
+          p.has-text-grey
+            | Okapia is a secret management app. It uses strong hash/encryption algorithms(AES256, Argon2) to secure anything that needs to be protected, including passwords, photos, notes, etc. It's totally offline and no network connection is used, which gurantees full security.
+          p.has-text-grey
+            | It's written in Flutter, both Anroid/iOS are supported. 
+        +project(null, 'Yin', 'https://github.com/drriguz/yin', 'In progress', null)
+          p.has-text-grey
+            | 一个辅助填（宋）词的app，帮助进行词牌和格律的检查. 
+      .columns
+        +project(null, 'Flutter Encryptions Plugin', 'https://github.com/drriguz/encryptions', null, '1.1.0+1')
+          p.has-text-gray
+            | A plugin for using native AES /Argon2 algorithms in Android/IOS.
+            ul
+              li
+                | AES(128bit or 256bit) in ECB or CBC mode, with NoPadding or PKCS5Padding. 
+              li
+                | argon2i, argon2d, argon2id
+        +project(null, 'Sqlcipher Flutter Plugin', 'https://github.com/drriguz/native_sqlcipher', null, '0.1.0')
+          p.has-text-gray
+            | Flutter sqlcipher plugin, for using sqlcipher in both Android and iOS by dart:ffi.
+      .columns
+        +project(null, 'OpenCV Flutter Plugin', 'https://github.com/drriguz/opencv_helper', null, '1.12.0')
+          p.has-text-gray
+            | Very fundamental OpenCV flutter plugin, which aims to provide a framework for starting OpenCV development with Flutter.
+      h1.subtitle Java and Web and Cloud
+      hr
+      .columns
+        +project(null, 'Jer', 'https://github.com/drriguz/jer', 'In progress', null)
+          p.has-text-gray
+            | A simple, OO-based toy JVM language written in Java, using Antlr to parse source code and compile into byte codes. 
+        +project(null, 'Avm', 'https://github.com/drriguz/avm', 'In progress', null)
+          p.has-text-gray
+            | A simple toy JVM written in C++, it was originally created when I was studying JVM.
+      .columns
+        +project(null, 'Pure', 'https://github.com/drriguz/Pure', null, '1.0')
+          p.has-text-gray
+            | A responsible Mediawiki skin based on Bulma, which is used in my <a href="https://wiki.riguz.com">wiki</a>.
+        +project(null, 'P3c Sonar PMD Plugin', 'https://github.com/drriguz/sonar-pmd-p3c', null, '1.0')
+          p.has-text-gray
+            | A sonar pmd extension for validating p3c(阿里巴巴Java开发规范).
+      .columns
+        +project(null, 'Forks Framework', 'https://github.com/drriguz/forks', 'In Progress', null)
+          p.has-text-gray
+            | A lightweight java web framework.
+        +project(null, 'Ks3 Vagrant', 'https://github.com/drriguz/k3s-vagrant', null, '1.0')
+          p.has-text-gray
+            | Scripts for deploying a local ks3 cluster(1 master + 2 worker) automatically by virtualbox/vagrant.
+      h1.subtitle Other
+      hr
+      .columns
+        +project(null, 'BTree Implementation', 'https://github.com/drriguz/btree',  null, '1.0')
+          p.has-text-gray
+            | Java b-tree implementation.
+        +project(null, 'DBSchema Key Generator', 'https://github.com/drriguz/db-schema-key-generator', null, '1.0')
+          p.has-text-gray
+            | A ... (this might not be appropriate to talk for the reason we all know).
+      .columns
+        +project(null, 'Kamera', 'https://github.com/drriguz/Kamera',  null, '1.0')
+          p.has-text-gray
+            | A camera client for rtsp based hardware, using live555, qt, and ffmpeg.
+        +project(null, 'CC Game', 'https://github.com/drriguz/cc', 'Aborted', null)
+          p.has-text-gray
+            | 2D game (actually not finished) written in C++, using SDL and Tiled.
