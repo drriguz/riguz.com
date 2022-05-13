@@ -13,8 +13,9 @@ before_install:
   -in deploy_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - sudo apt-get install -y jpegoptim optipng
+install:
+- npm i pug-cli
 script:
-- npm in pug-cli
 - pug ./src -o ./ -P && rm -f _*.html
 - cd assets
 - find . -name '*.jpg' -o -name '*.jpeg' | xargs jpegoptim --strip-all
