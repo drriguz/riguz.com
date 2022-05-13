@@ -13,6 +13,7 @@ before_install:
   -in deploy_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - sudo apt-get install -y jpegoptim optipng
+install:
 - sudo npm in pug-cli -g
 script:
 - pug ./src -o ./ -P && rm -f _*.html
