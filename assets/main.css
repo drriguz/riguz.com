@@ -64,3 +64,10 @@ html, body {
 .project {
     flex:1;
 }
+
+.wave-wrapper {
+}
+
+.avatar {
+    width: 100px;
+}
