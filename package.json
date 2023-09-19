@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "pug ./src -o ./ -P",
+    "serve": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
