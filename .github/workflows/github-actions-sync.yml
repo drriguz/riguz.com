@@ -25,7 +25,7 @@ jobs:
         uses: burnett01/rsync-deployments@5.2.1
         with:
           switches: -avz --quiet --delete
-          path: public/
+          path: build/
           remote_path: /var/www/html
           remote_host: riguz.com
           remote_user: rsync-deploy
