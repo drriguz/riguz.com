@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "pug ./src -o ./ -P",
+    "build": "pug ./src -o ./build -P && rm -f build/_*.html && cp -R assets ./build/ && mkdir -p ./build/bulma/css && cp ./bulma/css/bulma.min.css ./build/bulma/css/",
     "serve": "http-server ."
   },
   "dependencies": {
