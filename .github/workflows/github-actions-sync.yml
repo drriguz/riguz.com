@@ -1,0 +1,32 @@
+name: Publish to homepage
+run-name: ${{ github.actor }} building & publishing 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+      - name: Install dependencies
+        run: npm install
+      - name: Install tools
+        run: |
+          sudo apt-get install -y jpegoptim optipng
+      - name: Build site
+        run: |
+          npm run build && rm -f _*.html
+          cd assets
+          find . -name '*.jpg' -o -name '*.jpeg' | xargs jpegoptim --strip-all
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avz --quiet --delete
+          path: public/
+          remote_path: /var/www/html
+          remote_host: riguz.com
+          remote_user: rsync-deploy
+          remote_key: ${{ secrets.BLOG_PUBLISH_KEY }}
